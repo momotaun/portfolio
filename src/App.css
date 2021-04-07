@@ -1,38 +1,67 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --primary-blue: #00adef;
+  --primary-white: #ffffff;
+  --primary-black: #000000;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: "Roboto Condesed" sans-serif;
+}
+
+/*---------- NAVBAR ----------*/
+.navbar-brand-container {
   text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*---------- MENU LINKS ----------*/
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li {
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  border-top: 00.1875rem solid var(--primary-dark);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-blue);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  /* height: 6rem; */
+}
+
+.first-brand-name {
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  font-weight: 900;
+}
+
+.second-brand-name {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.slogan {
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  font-size: 0.75rem;
+  /* font-style: italic; */
 }
